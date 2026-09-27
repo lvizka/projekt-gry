@@ -113,7 +113,7 @@ for(int i=0;i<rozmiar;i++)
     cout<<endl;
 }
 
-cout<<"\n\nGRATULACJE! Zebrales wszystkie skarby! ("<<punkty<<"/"<<liczba_skarbow<<")"<<endl
+cout<<"\n\nGRATULACJE! Zebrales wszystkie skarby! ("<<punkty<<"/"<<liczba_skarbow<<")"<<endl;
 
 return 0;
 }
