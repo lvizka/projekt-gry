@@ -61,7 +61,7 @@ int main()
                     }
             }
             plansza[y][x]='G';
-        cout<<"n\n\";
+        cout<<"\n\n"
         for(int i=0;i<rozmiar;i++)
             {
                 for(int j=0; j<rozmiar;j++)
@@ -80,44 +80,43 @@ int main()
         char co_bylo = plansza[y][x];
         plansza[y][x] = (co_bylo=='S') ? 'S' : '.';
 
-                if(ruch=='w') {
-            if(y>0) y--;
-        }
-        else if(ruch=='s') {
+               if(ruch=='w'){
+                   if(y>0) y--;
+               }
+        else if(ruch=='s'){
             if(y<rozmiar-1) y++;
         }
-        else if(ruch=='a') {
+        else if(ruch=='a'){
             if(x>0) x--;
         }
-        else if(ruch=='d') {
+        else if(ruch=='d'){
             if(x<rozmiar-1) x++;
         }
-        else if(ruch=='q') {
+        else if(ruch=='q'){
             cout<<"Koniec gry. Zebrane skarby: "<<punkty<<"/"<<liczba_skarbow<<endl;
             return 0;
         }
 
-        if(plansza[y][x]=='S') {
+        if(plansza[y][x]=='S'){
             punkty++;
-            plansza[y][x]='.'; 
+            plansza[y][x]='.';
         }
-    }
+}
 
-    cout<<"\n\n";
-    for(int i=0;i<rozmiar;i++)
-    {
-        for(int j=0; j<rozmiar;j++)
+cout<<"\n\n"; 
+for(int i=0;i<rozmiar;i++)
+{
+    for(int j=0;j<rozmiar;j++)
         {
             cout<<plansza[i][j]<<" ";
         }
-        cout<<endl;
-    }
-
-    cout<<"\n\nGRATULACJE! Zebrales wszystkie skarby! ("<<punkty<<"/"<<liczba_skarbow<<")"<<endl;
-
-    return 0;
+    cout<<endl;
 }
 
+cout<<"\n\nGRATULACJE! Zebrales wszystkie skarby! ("<<punkty<<"/"<<liczba_skarbow<<")"<<endl
+
+return 0;
+}
 
     
     
